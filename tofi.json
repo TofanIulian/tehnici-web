@@ -1,0 +1,51 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "jobName": "Software Developer Trainee",
+      "firmName": "HTSS",
+      "description": "Clearly, this book is for programmers who want to create web applications (traditional websites, RESTful APIs, or anything in between) using JavaScript, Node, and Express. One of the exciting aspects of Node development is that it has attracted a whole new audience of programmers. The accessibility and flexibility of JavaScript has attracted self-taught programmers from all over the world. At no time in the history of computer science has programming been so accessible. The number and quality of online resources for learning to program (and getting help when you get stuck) is truly astonishing and inspiring. So to those new (possibly self-taught) programmers, I welcome you.",
+      "startDate": "iulie 2018",
+      "endDate": "septembrie 2018"
+    },
+    {
+      "id": 2,
+      "jobName": "Software Developer Trainee",
+      "firmName": "HTSS",
+      "description": "Then, of course, there are the programmers like me, who have been around for a while. Like many programmers of my era, I started off with assembler and BASIC, and went through Pascal, C++, Perl, Java, PHP, Ruby, C, C#, and JavaScript. At university, I was exposed to more niche languages such as ML, LISP, and PROLOG. Many of these languages are near and dear to my heart, but in none of these languages do I see so much promise as I do in JavaScript. So I am also writing this book for programmers like myself, who have a lot of experience, and perhaps a more philosophical outlook on specific technologies.",
+      "startDate": "iulie 2018",
+      "endDate": "septembrie 2018"
+    },
+    {
+      "id": 3,
+      "jobName": "Software Developer Trainee",
+      "firmName": "HTSS",
+      "description": "No experience with Node is necessary, but you should have some experience with JavaScript. If you’re new to programming, I recommend Codecademy. If you’re an experienced programmer, I recommend Douglas Crockford’s JavaScript: The Good Parts (O’Reilly). The examples in this book can be used with any system that Node works on (which covers Windows, OS X, and Linux). The examples are geared toward command-line (terminal) users, so you should have some familiarity with your system’s terminal.",
+      "startDate": "iulie 2018",
+      "endDate": "septembrie 2018"
+    }
+  ],
+  "resume": [
+    {
+      "id": 1,
+      "body": "Too much to say",
+      "postId": 1,
+      "imgLink": "https://media1.tenor.com/images/b21ca18f23c44e51314d8db7e81cc422/tenor.gif?itemid=7413343"
+    }
+  ],
+  "portfolio": {
+    "picture": "no pic",
+    "imgLink": "https://i.kym-cdn.com/entries/icons/original/000/006/707/nothing-to-do-here-template.jpg.scaled500.jpg"
+  },
+  "contact": [
+    {
+      "id": 1,
+      "lastName": "Tofan",
+      "fistName": "Iulian",
+      "email": "tofi@t.ro",
+      "phoneNumber": "0784744972",
+      "location": "Bucuresti",
+      "imgLink": "https://i.kym-cdn.com/photos/images/original/001/295/524/cda.jpg"
+    }
+  ]
+}

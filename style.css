@@ -1,0 +1,323 @@
+div{
+    margin: 0;
+}
+
+/*actual css*/
+body{
+	margin: 0px;
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 7vw auto 7vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    ". header ."
+    ". nav ."
+    ". main ."
+    ". footer .";
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html { 
+  background: url("blackhole.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header {
+    text-align: center;
+    grid-area: header;
+}
+.header h1{
+    animation-name: example;
+    animation-duration: 4s;
+	color: #ee7248;
+}
+.header h3{
+	color:#ee7248;
+}
+
+.body {
+	background:rgba(0, 0, 0, 0.94) ;
+    min-height: 100vh;
+    color: #ee7248;
+    grid-area: main;
+}
+
+footer{
+    text-align: center;
+    color: #329683;
+    grid-area: footer;
+}
+
+.body div.left{
+    display: inline-block;
+}
+.body div.left {
+    width: calc(100% - 20px );
+    padding: 0 10px;
+}
+.chapter{
+    padding: 10px 10px;
+}
+.chapter .chapter-header h3{
+    display: inline;
+}
+.chapter span{
+    float: right;
+    color:#329683;
+    /* background-color: darkgreen; */
+}
+
+/* navbar */
+.nav{
+    grid-area: nav;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2ECC40;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* end of nav */
+
+ul i{
+	margin-right: 5px;
+}
+
+.selected{
+	background-color: rgb(50, 192, 66);
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 300px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**/
+.f-r{
+    float: right;
+}
+
+
+
+
+
+
+body {
+  font-size: 16px;  
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+}
+
+form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+fieldset {
+  position: relative;
+  border: none;  
+}
+
+label {
+  position: absolute;  
+  top: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+input:focus ~ label {
+  color: red;  
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  transform: scale(0.6, 0.6);
+}
+
+input {
+  font-size: 20px;  
+  width: 100%;
+  border: none;  
+  margin-top: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.after {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, red 50%, transparent 50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.6s ease;
+}
+
+input:focus ~ .after {
+  background-position: 0 0;
+}
+
+.modal-content button {
+  position: relative;
+  width: 100%;
+  font-size: 20px;  
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin-top: 20px;
+  padding: 2px 10px;
+  color: rgba(0, 0, 0, 0.4);
+  background: white;
+  border: none;
+  background: linear-gradient(to right, red 50%, transparent 50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.6s ease;
+}
+
+.modal-content button:before {
+  position: absolute;
+  content: "Submit";
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  display: block;
+  background-color: white;
+}
+
+.modal-content button:active,
+.modal-content button:focus,
+.modal-content button:hover {
+  outline: none;
+  background-position: 0 0;
+  color: red;
+}
+
+
+
+.sub-button{
+     /* top: -74px; */
+}
+
+
+@keyframes example {
+    from {color: #329683;}
+    to {color: #ee7248;}
+  }
+
+
+img{
+    width: 80%;
+    margin: 0px 10%
+}
+
+/* Style buttons */
+.btn {
+    background-color: #3c9a88; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 6px 8px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #329683;
+  }
+
+.open{
+    position: relative;
+    left: calc(50% - 109px);
+}
